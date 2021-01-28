@@ -45,29 +45,22 @@ _**GroupDeck** is a web applictaion built to help people find other people with 
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![https://whimsical.com/p4-brrrr-MMF9uJT7ruDfRrhpS1gJ7P](https://whimsical.com/p4-brrrr-MMF9uJT7ruDfRrhpS1gJ7P)
 
-- Desktop Landing
+- Mobile Landing
 
-![Dummy Link](url)
+![imagealt](https://i.imgur.com/85nVthc.png)
 
-- Desktop Hero
+- Sign in / Sign up
 
-![Dummy Link](url)
+![Dummy Link](https://i.imgur.com/ZmwQT2i.png)
 
-- Resource Index
+- Signed in home / Details page
 
-![Dummy Link](url)
+![Dummy Link](https://i.imgur.com/B5Yyxms.png)
 
-- Resource Show
+- Add new / User Events
 
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+![Dummy Link](https://i.imgur.com/ca87TfR.png)
 
 #### Component Tree
 
