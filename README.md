@@ -142,7 +142,7 @@ src
 
 #### ERD Model
 
-[ERD model](https://drive.google.com/file/d/1j4OR0-0KwMnWMrd4FREaAvbSViFhyvQS/view?usp=sharing)
+[ERD model](https://i.imgur.com/8yFLr0h.png)
 
 <br>
 
