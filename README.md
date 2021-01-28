@@ -67,7 +67,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](https://whimsical.com/p4-brrrr-MMF9uJT7ruDfRrhpS1gJ7P)
+![https://whimsical.com/p4-brrrr-MMF9uJT7ruDfRrhpS1gJ7P](https://whimsical.com/p4-brrrr-MMF9uJT7ruDfRrhpS1gJ7P)
 
 - Desktop Landing
 
