@@ -24,7 +24,7 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**GroupDeck** is a web applictaion built to help people find other people with similar interests! Once you make an account you can create your own event for people to see and come check out or check out others events to see if you would be interested in going to their event!
 
 
 <br>
@@ -32,19 +32,24 @@ _**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum ri
 ## MVP
 
 > The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
-<br>
-
-### Goals
-
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
-
+- Back-end
+  - Have a **RESTful JSON API**.
+  - Build a **Ruby on Rails** server, exposing RESTful JSON endpoints.
+  - Build a database with at least 3 tables:
+  - Have at least 1 association between tables. (1:m _or_ m:m)
+  - Utilize **Rails** to define models for interacting with the database.
+  - Implement working generic controller actions for Full CRUD (`index`, `show`, `create`, `update`, `delete`) between non-User tables 
+  
+- Front-end
+  - Have a working, interactive **React** app, built using `npx create-react-app`.
+  - Have at least 8 separate, rendered components in an organized and understandable React file structure.
+  - Utilize functional and class React components appropriately.
+  - Utilize state and props in my components efficiently.
+  - Use _only_ React for DOM Manipulation.
+  - Consume data from my **Ruby on Rails API**, and render that data in my components.
+  - Utilize **React Router**, for client-side routing.
+  - Demonstrate Full CRUD actions ( `index`, `show`, `create`, `update`, and `delete` ) on the front end.
+  
 <br>
 
 ### Libraries and Dependencies
@@ -137,7 +142,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+![ERD model](https://imgur.com/8yFLr0h)
 
 <br>
 
@@ -145,8 +150,9 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
+  - Likes and comments on events
+  - Share events with your friends
+  
 ***
 
 ## Code Showcase
