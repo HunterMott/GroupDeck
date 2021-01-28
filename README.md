@@ -5,7 +5,6 @@
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 - Back-end
   - Have a **RESTful JSON API**.
   - Build a **Ruby on Rails** server, exposing RESTful JSON endpoints.
@@ -28,8 +27,6 @@
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       | React makes it painless to create interactive UIs |
@@ -42,9 +39,6 @@
 ### Client (Front End)
 
 #### Wireframes
-
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
 
 - Mobile Landing
 
@@ -69,14 +63,28 @@
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ LoginForm.jsx
+      |__ SignupForm.jsx
+      |__ Events.jsx
+      |__ AddEventForm.jsx
 |__ services/
+      |__ ApiConfig.js
+      |__ Events.js
+      |__ Users.js
+|__ screens/
+      |__ Login.jsx
+      |__ Signup.jsx
+      |__ MyEvents.jsx
+      |__ EventEdit.jsx
+      |__ Create.jsx
+      |__ Home.jsx
+      |__ EventDetail.jsx
+|__ Layout/
+      |__ Header.jsx
+      |__ Nav.jsx
+      |__ Layout.jsx
+      |__ Footer.jsx
 
 ```
 
