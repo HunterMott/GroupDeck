@@ -82,7 +82,7 @@ src
 
 #### Component Tree
 
-[Component tree](https://i.imgur.com/K7R2U5e.png)
+![Component tree](https://i.imgur.com/K7R2U5e.png)
 
 #### Time Estimates
 
