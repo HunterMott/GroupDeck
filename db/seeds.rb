@@ -9,3 +9,16 @@
 
 
 User.create!({ username: 'hunter', email: 'hunter@hunter.com', password: '1234567'})
+
+
+Interest.create!([{name: 'Tech'}, {name: 'Outdoors'}, {name: 'Family'}])
+
+
+Event.create!({
+  title: 'interview help',
+  description: 'come learn how to interview',
+  date: 'feb 3rd',
+  img_url: '',
+  user_id: 1,
+  interest_id: 1
+})
