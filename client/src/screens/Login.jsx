@@ -41,7 +41,8 @@ const Login = (props) => {
             value={password}
             onChange={handleChange}/>
           <Button
-            variant="contained"
+          variant="contained"
+          type='submit'
           >Login</Button>
         </form>
     </div>

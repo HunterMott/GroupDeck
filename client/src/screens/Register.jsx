@@ -54,8 +54,10 @@ const Register = (props) => {
           value={password}
           onChange={handleChange}
         />
-        <Button variant="contained">Login</Button>
-        <button>submit</button>
+        <Button
+          variant="contained"
+          type='submit'
+        >Login</Button>
       </form>
     </div>
   );
