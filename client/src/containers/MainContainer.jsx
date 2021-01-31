@@ -15,11 +15,32 @@ const MainContainer = (props) => {
 
   useEffect(() => {
     const fetchEvents = async () => {
-      const eventData = await getAllEvents();
+      const eventData = await getAllEvents()
       setEvents(eventData)
     }
+    fetchEvents()
+  }, [])
 
-  }, []);
+  const handleCreate = async (eventData) => {
+    const newEvent = await postEvent(eventData)
+    setEvents(prevState => [...prevState, newEvent])
+    history.push('/')
+  }
+
+  const handleDelete = async (id) => {
+    await deleteEvent(id)
+    setEvents(prevState => prevState.filter(eventItem => {
+      return eventItem.id !== id
+    }))
+  }
+
+  const handleUpdate = async (id, eventData) => {
+    const updatedEvent = await putEvent(id, eventData)
+    setEvents(prevState => prevState.map(eventItem => {
+      return eventItem.id === Number(id) ? updatedEvent : eventItem
+    }))
+    history.push('/')
+  }
 
   return (
     <Switch>

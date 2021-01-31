@@ -5,7 +5,9 @@ export default function Layout(props) {
   return (
     <div>
       <header>
+        <Link to='/'>
         <h1>GroupDeck</h1>
+        </Link>
         {currentUser ? (
           <>
             <p>{currentUser.username}</p>
