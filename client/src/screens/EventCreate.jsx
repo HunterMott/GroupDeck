@@ -3,13 +3,12 @@ import React, { useState } from "react";
 import DropDown from "../components/DropDown";
 
 const EventCreate = (props) => {
-  const [formData, setFormData] = useState({
-    name: "",
-  });
   const { handleCreate, interests, currentUser } = props;
 
+  const [formData, setFormData] = useState({
+  });
 
-  const { title, description, date, img_url, interest_id, currentUser } = formData;
+  const { title, description, date, img_url, interest_id} = formData;
 
 
   const handleChange = (e) => {
@@ -24,6 +23,9 @@ const EventCreate = (props) => {
     <form
       onSubmit={(e) => {
         e.preventDefault();
+        setFormData((prevState) => ({
+          ...prevState, user_id: currentUser.id
+        }));
         handleCreate(formData);
       }}
     >

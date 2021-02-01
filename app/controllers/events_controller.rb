@@ -5,7 +5,7 @@ class EventsController < ApplicationController
   # GET /events
   def index
     @events = Event.all
-
+    
     render json: @events
   end
 
@@ -16,10 +16,12 @@ class EventsController < ApplicationController
 
   # POST /events
   def create
+    puts @current_user
+    puts event_params
     @event = Event.new(event_params)
-    @event.interest = Interest.find(params[:interest_id])
-    @event.user = User.find(params[:currentUser][:id])
-    
+    @event.interest = Interest.find(event_params[:interest_id])
+    @event.user = @current_user
+    puts @event
     if @event.save
       render json: @event, status: :created, location: @event
     else
@@ -49,6 +51,6 @@ class EventsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def event_params
-      params.require(:event).permit(:title, :description, :date, :img_url)
+      params.require(:event).permit(:title, :description, :date, :img_url, :interest_id, :user_id)
     end
 end
