@@ -6,7 +6,7 @@ class InterestsController < ApplicationController
   def index
     @interests = Interest.all
 
-    render json: @interests
+    render json: @interests, include: :events
   end
 
   # GET /interests/1

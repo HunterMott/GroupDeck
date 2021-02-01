@@ -11,13 +11,15 @@ class EventsController < ApplicationController
 
   # GET /events/1
   def show
-    render json: @event
+    render json: @event, include: :user
   end
 
   # POST /events
   def create
     @event = Event.new(event_params)
-
+    @event.interest = Interest.find(params[:interest_id])
+    @event.user = User.find(params[:currentUser][:id])
+    
     if @event.save
       render json: @event, status: :created, location: @event
     else
