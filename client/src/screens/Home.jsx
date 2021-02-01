@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 const Home = (props) => {
-  const { events, currentUser } = props;
+  const { events } = props;
   
   return (
     <div>

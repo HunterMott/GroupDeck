@@ -10,7 +10,7 @@ import MainContainer from './containers/MainContainer'
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory()
-  console.log(currentUser)
+
   useEffect(() => {
     const handleVerify = async () => {
       const userData = await verifyUser();
