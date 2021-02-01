@@ -23,8 +23,8 @@ export default function Layout(props) {
       <hr />
       {currentUser && (
         <>
-          <Link to="/events">events</Link>
-          {/* <Link to='/flavors'>Flavors</Link> */}
+          <Link to="/eventcreate">Create Event</Link>
+          <Link to='/myevents'>My Events</Link>
         </>
       )}
       {props.children}

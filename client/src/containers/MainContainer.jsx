@@ -11,7 +11,7 @@ import {
   getAllEvents,
   postEvent,
   putEvent,
-  getOneEvent,
+  // getOneEvent,
 } from "../services/events";
 import { getAllInterests } from "../services/interests";
 
@@ -45,11 +45,12 @@ const MainContainer = (props) => {
 
   const handleDelete = async (id) => {
     await deleteEvent(id);
-    setEvents((prevState) =>
+    setEvents(prevState => 
       prevState.filter((eventItem) => {
         return eventItem.id !== id;
       })
     );
+    history.push('/')
   };
 
   const handleUpdate = async (id, eventData) => {
@@ -74,10 +75,11 @@ const MainContainer = (props) => {
           currentUser={currentUser} />
       </Route>
       <Route path="/myevents">
-        <MyEvents />
+        <MyEvents currentUser={currentUser}
+          handleDelete={ handleDelete}/>
       </Route>
-      <Route path="/eventedit">
-        <EventEdit />
+      <Route path="/eventedit/:id">
+        <EventEdit handleUpdate={handleUpdate} events={ events}/>
       </Route>
       <Route path="/">
         <Home currentUser={currentUser} events={events} />
