@@ -1,6 +1,19 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import { getOneUser } from '../services/users';
 
-const MyEvents = () => {
+const MyEvents = (props) => {
+  const [user, setUser] = useState({})
+  const { currentUser } = props
+  
+  useEffect(() => {
+    const getUser = async () => {
+      const userData = await getOneUser(currentUser?.id)
+      setUser(userData)
+    }
+    getUser()
+  }, [])
+  console.log(user);
+
   return (
     <div>
       test5

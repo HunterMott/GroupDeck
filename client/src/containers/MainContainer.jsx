@@ -74,7 +74,7 @@ const MainContainer = (props) => {
           currentUser={currentUser} />
       </Route>
       <Route path="/myevents">
-        <MyEvents />
+        <MyEvents currentUser={currentUser}/>
       </Route>
       <Route path="/eventedit">
         <EventEdit />

@@ -1,6 +1,5 @@
 import { Button, TextField } from "@material-ui/core";
 import React, { useState } from "react";
-import DropDown from "../components/DropDown";
 
 const EventCreate = (props) => {
   const { handleCreate, interests, currentUser } = props;
@@ -61,7 +60,6 @@ const EventCreate = (props) => {
         value={img_url}
         onChange={handleChange}
       />
-      {/* <DropDown interests={interests} setFormData={setFormData} /> */}
       <select defaultValue="default" onChange={handleChange} name='interest_id' value={interest_id}>
         <option disabled value="default">
           -- Select a Category --
@@ -73,7 +71,7 @@ const EventCreate = (props) => {
         ))}
       </select>
       <Button variant="contained" type="submit">
-        Login
+        Submit
       </Button>
     </form>
   );

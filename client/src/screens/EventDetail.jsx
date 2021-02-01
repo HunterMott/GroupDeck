@@ -13,11 +13,11 @@ const EventDetail = (props) => {
       setSingleEvent(eventData)
     }
     fetchEvent()
-  }, [])
+  }, [id])
 
   return (
     <div>
-      testttttttt
+      
     </div>
   );
 };
