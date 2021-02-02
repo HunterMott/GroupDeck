@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getOneEvent } from "../services/events";
+import '../styles/EventDetail.css'
 
 const EventDetail = (props) => {
   const [singleEvent, setSingleEvent] = useState(null);
@@ -16,9 +17,9 @@ const EventDetail = (props) => {
   }, [id]);
   const event = singleEvent;
   return (
-    <div>
+    <div className='eventdetaildiv'>
       <>
-        <img src={event?.img_url} alt='alt img' />
+        <img className='eventdetailimg'src={event?.img_url} alt='alt img' />
       </>
       <p> This event is being hosted by: {event?.user.username}</p>
       <h1>{event?.title}</h1>

@@ -1,0 +1,10 @@
+.eventdetailimg {
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+.eventdetaildiv{
+  text-align: center;
+  width: 80vw;
+  padding: 0 10vw 0 10vw;
+}

@@ -2,6 +2,7 @@ import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { getOneUser } from "../services/users";
+import '../styles/MyEvents.css'
 
 const MyEvents = (props) => {
   const [user, setUser] = useState({});
@@ -18,7 +19,8 @@ const MyEvents = (props) => {
   }, [currentUser]);
 
   return (
-    <>
+    <div className='myeventsdiv'>
+      <h2>These are your events! You can edit or delete them from this page.</h2>
       {user.events && (
         <div>
           {user.events.map((event) => {
@@ -27,7 +29,7 @@ const MyEvents = (props) => {
                 <div>
                   <Link to={`/event/${event.id}`}>
                     <h3> {event.title}</h3>
-                    <p> {event.description}</p>
+                    <p> {event.description.substring(0, 350)}...</p>
                   </Link>
                   <Link to={`/eventedit/${event.id}`}>
                   <Button>Edit</Button>
@@ -39,7 +41,7 @@ const MyEvents = (props) => {
           })}
         </div>
       )}
-    </>
+    </div>
   );
 };
 

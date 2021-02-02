@@ -8,16 +8,17 @@ const Home = (props) => {
   return (
     <div className='homepage'>
       <h2>Welcome to GroupDeck</h2>
-      <h3>This is a place to find things to do! From sunday after</h3>
+      <h3>Find events hosted by local groups where you can meet new people, try something new, or just do more of what you love.</h3>
       <p>Check out these events!</p>
       <>
         {events.map((eventItem) => {
           return (
             <Link to={`/event/${eventItem.id}`}>
             <div className="eventCard">
-                <p> {eventItem.title}</p>
-                <p> {eventItem.date}</p>
-              <p> {eventItem.description}</p>
+                <h3> {eventItem.title}</h3>
+                <h5> {eventItem.date}</h5>
+                <img className='homeimg' src={eventItem.img_url} alt='alt img' />
+              <p> {eventItem.description.substring(0, 350)}...</p>
               </div>
             </Link>
           );

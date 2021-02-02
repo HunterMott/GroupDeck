@@ -40,46 +40,50 @@ const EventEdit = (props) => {
   };
 
   return (
-    <form onSubmit={(e) => {
-      e.preventDefault();
-      handleUpdate(Number(id), formData)
-    }}>
-      <TextField
-        name="title"
-        id="title"
-        label="Title"
-        variant="outlined"
-        value={title}
-        onChange={handleChange}
-      />
-      <TextField
-        name="description"
-        id="description"
-        label="Description"
-        variant="outlined"
-        value={description}
-        onChange={handleChange}
-      />
-      <TextField
-        name="date"
-        id="date"
-        label="Date"
-        variant="outlined"
-        value={date}
-        onChange={handleChange}
-      />
-      <TextField
-        name="img_url"
-        id="img_url"
-        label="Image url"
-        variant="outlined"
-        value={img_url}
-        onChange={handleChange}
-      />
-      <Button variant="contained" type="submit">
-        Submit
-      </Button>
-    </form>
+    <div className='formdiv'>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleUpdate(Number(id), formData);
+        }}
+      >
+        <TextField
+          name="title"
+          id="title"
+          label="Title"
+          variant="outlined"
+          value={title}
+          onChange={handleChange}
+        />
+        <TextField
+          name="description"
+          id="description"
+          label="Description"
+          variant="outlined"
+          value={description}
+          onChange={handleChange}
+        />
+        <TextField
+          name="date"
+          id="date"
+          label="Date"
+          variant="outlined"
+          value={date}
+          onChange={handleChange}
+        />
+        <TextField
+          name="img_url"
+          id="img_url"
+          label="Image url"
+          variant="outlined"
+          value={img_url}
+          onChange={handleChange}
+        />
+        <Button className='formbutton' variant="contained" type="submit">
+          Submit
+        </Button>
+      </form>
+    </div>
   );
 };
 

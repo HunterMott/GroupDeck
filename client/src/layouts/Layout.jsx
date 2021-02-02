@@ -14,19 +14,19 @@ export default function Layout(props) {
         {currentUser ? (
           <div className='loggedinusername'>
             <p>{currentUser.username}</p>
-            <Button onClick={handleLogout}>Logout</Button>
+            <Button size='small' onClick={handleLogout}>Logout</Button>
           </div>
         ) : (
           <div className='loginlink'>
-            <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
+            <Link to="/login"><Button size='small'>Login</Button></Link>
+            <Link to="/register"><Button size='small'>Register</Button></Link>
           </div>
         )}
         {currentUser && (
           <div className='navlinks'>
-            <Link to="/eventcreate"><Button>Create Event</Button></Link>
+            <Link to="/eventcreate"><Button size='small'>Create Event</Button></Link>
             <br/>
-            <Link to="/myevents"><Button>My Events</Button></Link>
+            <Link to="/myevents"><Button size='small'>My Events</Button></Link>
           </div>
         )}
       </header>
