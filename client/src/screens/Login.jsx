@@ -2,7 +2,7 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import { useState } from 'react';
-import '../styles/Login.css'
+import '../styles/Form.css'
 
 const Login = (props) => {
 
@@ -40,7 +40,7 @@ const Login = (props) => {
             label="Password" variant="outlined"
             value={password}
             onChange={handleChange}/>
-          <Button
+        <Button className='formbutton'
           variant="contained"
           type='submit'
           >Login</Button>

@@ -21,7 +21,7 @@ const Register = (props) => {
   };
 
   return (
-    <div>
+    <div className='formdiv'>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -53,7 +53,7 @@ const Register = (props) => {
           value={password}
           onChange={handleChange}
         />
-        <Button
+        <Button className='fombutton'
           variant="contained"
           type='submit'
         >Login</Button>

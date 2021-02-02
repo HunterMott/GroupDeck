@@ -1,8 +1,0 @@
-.formdiv{
-  display: flex;
-  height: 300px;
-}
-form {
-  flex-direction: row;
-  justify-content: center;
-}
