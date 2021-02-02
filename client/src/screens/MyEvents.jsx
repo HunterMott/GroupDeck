@@ -26,7 +26,7 @@ const MyEvents = (props) => {
           {user.events.map((event) => {
             return (
               <>
-                <div>
+                <div className='myeventscard'>
                   <Link to={`/event/${event.id}`}>
                     <h3> {event.title}</h3>
                     <p> {event.description.substring(0, 350)}...</p>
