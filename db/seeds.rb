@@ -13,7 +13,7 @@ User.destroy_all
 @user = User.create!({ username: 'hunter', email: 'hunter@hunter.com', password: '1234567'})
 
 
-@interest = Interest.create!([{name: 'Tech'}, {name: 'Outdoors & Adventure'}, {name: 'Family'}, {name: 'Health & Wellness'}, {name: 'Sports & Fitness'}, {name: 'Learning'}, {name: 'Photography'}, {name: 'Food & Drink'}, {name: 'Writing'}, {name: 'Language & Cultue'}, {name: 'Music'}, {name: 'Movements'}, {name: 'LGBTQ'}, {name: 'Film'}, {name: 'Sci-Fi & Games'}, {name: 'Beliefs'}, {name: 'Arts'}, {name: 'Book Clubs'}, {name: 'Dance'}, {name: 'Pets'}, {name: 'Hobbies & Crafts'}, {name: 'Fashion & Beauty'}, {name: 'Social'}, {name: 'Career & Business'}])
+@interests = Interest.create!([{name: 'Tech'}, {name: 'Outdoors & Adventure'}, {name: 'Family'}, {name: 'Health & Wellness'}, {name: 'Sports & Fitness'}, {name: 'Learning'}, {name: 'Photography'}, {name: 'Food & Drink'}, {name: 'Writing'}, {name: 'Language & Cultue'}, {name: 'Music'}, {name: 'Movements'}, {name: 'LGBTQ'}, {name: 'Film'}, {name: 'Sci-Fi & Games'}, {name: 'Beliefs'}, {name: 'Arts'}, {name: 'Book Clubs'}, {name: 'Dance'}, {name: 'Pets'}, {name: 'Hobbies & Crafts'}, {name: 'Fashion & Beauty'}, {name: 'Social'}, {name: 'Career & Business'}])
 
 
 Event.create!({
@@ -22,5 +22,5 @@ Event.create!({
   date: 'Feb 8th, 2021',
   img_url: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
   user: @user,
-  interest: @interest
+  interest: @interests.last
 })
