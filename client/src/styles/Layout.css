@@ -1,0 +1,43 @@
+.header {
+
+  text-align: center;
+  display: flex;
+  height: 140px;
+}
+.logo {
+  padding-top: 13px;
+  padding-left: 10px;
+}
+
+.loggedinusername{
+  display: flex;
+  flex-direction: column;
+  height: 8px;
+  margin-top: 15px;
+  margin-left: 8px;
+  align-content: center;
+}
+
+p {
+  margin: 0px;
+  padding-bottom: 3px;
+}
+.loginlink {
+  margin-top: 24px;
+  margin-left: 25px;
+  text-decoration: none;
+  color: black;
+}
+a, p{
+  text-decoration: none;
+  color: black;
+}
+
+.navlinks {
+  flex-direction: column;
+  height: 50px;
+  width: 85px;
+}
+a {
+  height: 50px;
+}

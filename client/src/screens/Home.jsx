@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 import React from "react";
+import '../styles/Home.css'
 
 const Home = (props) => {
   const { events } = props;
   
   return (
-    <div>
+    <div className='homepage'>
       <h2>Welcome to GroupDeck</h2>
-      <h3>This is what we do! </h3>
+      <h3>This is a place to find things to do! From sunday after</h3>
+      <p>Check out these events!</p>
       <>
         {events.map((eventItem) => {
           return (

@@ -2,6 +2,7 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import { useState } from 'react';
+import '../styles/Login.css'
 
 const Login = (props) => {
 
@@ -21,7 +22,7 @@ const Login = (props) => {
   }
 
   return (
-    <div>
+    <div className='formdiv'>
         <form onSubmit={(e) => {
           e.preventDefault();
           handleLogin(formData)

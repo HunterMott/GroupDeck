@@ -6,7 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+User.destroy_all
+Interest.destroy_all
+Event.destroy_all
 
 User.create!({ username: 'hunter', email: 'hunter@hunter.com', password: '1234567'})
 
@@ -15,10 +17,10 @@ Interest.create!([{name: 'Tech'}, {name: 'Outdoors & Adventure'}, {name: 'Family
 
 
 Event.create!({
-  title: 'interview help',
-  description: 'come learn how to interview',
-  date: 'feb 3rd',
-  img_url: '',
+  title: 'Interview Skillz Lightining Lecture!!',
+  description: 'Come learn how to interview properly like a real adult and get the job you want now!',
+  date: 'Feb 8th, 2021',
+  img_url: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
   user_id: 1,
   interest_id: 1
 })

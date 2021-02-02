@@ -6,7 +6,7 @@ import { getOneEvent } from "../services/events";
 const EventDetail = (props) => {
   const [singleEvent, setSingleEvent] = useState(null);
   const { id } = useParams();
-  console.log(singleEvent);
+
   useEffect(() => {
     const fetchEvent = async () => {
       const eventData = await getOneEvent(id);
