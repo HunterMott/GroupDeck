@@ -13,7 +13,7 @@ User.destroy_all
 @user = User.create!({ username: 'hunter', email: 'hunter@hunter.com', password: '1234567'})
 
 
-@interests = Interest.create!([{name: 'Tech'}, {name: 'Outdoors & Adventure'}, {name: 'Family'}, {name: 'Health & Wellness'}, {name: 'Sports & Fitness'}, {name: 'Learning'}, {name: 'Photography'}, {name: 'Food & Drink'}, {name: 'Writing'}, {name: 'Language & Cultue'}, {name: 'Music'}, {name: 'Movements'}, {name: 'LGBTQ'}, {name: 'Film'}, {name: 'Sci-Fi & Games'}, {name: 'Beliefs'}, {name: 'Arts'}, {name: 'Book Clubs'}, {name: 'Dance'}, {name: 'Pets'}, {name: 'Hobbies & Crafts'}, {name: 'Fashion & Beauty'}, {name: 'Social'}, {name: 'Career & Business'}])
+@interests = Interest.create!([{name: 'Tech'}, {name: 'Outdoors & Adventure'}, {name: 'Family'}, {name: 'Health & Wellness'}, {name: 'Sports & Fitness'}, {name: 'Learning'}, {name: 'Photography'}, {name: 'Food & Drink'}, {name: 'Writing'}, {name: 'Language & Culture'}, {name: 'Music'}, {name: 'Movements'}, {name: 'LGBTQ'}, {name: 'Film'}, {name: 'Sci-Fi & Games'}, {name: 'Beliefs'}, {name: 'Arts'}, {name: 'Book Clubs'}, {name: 'Dance'}, {name: 'Pets'}, {name: 'Hobbies & Crafts'}, {name: 'Fashion & Beauty'}, {name: 'Social'}, {name: 'Career & Business'}])
 
 
 Event.create!({
