@@ -53,6 +53,7 @@ const EventEdit = (props) => {
           label="Title"
           variant="outlined"
           value={title}
+          required
           onChange={handleChange}
         />
         <TextField
@@ -62,6 +63,7 @@ const EventEdit = (props) => {
           variant="outlined"
           value={description}
           onChange={handleChange}
+          required
         />
         <TextField
           name="date"
@@ -70,6 +72,7 @@ const EventEdit = (props) => {
           variant="outlined"
           value={date}
           onChange={handleChange}
+          required
         />
         <TextField
           name="img_url"
@@ -78,6 +81,7 @@ const EventEdit = (props) => {
           variant="outlined"
           value={img_url}
           onChange={handleChange}
+          required
         />
         <Button className='formbutton' variant="contained" type="submit">
           Submit

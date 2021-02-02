@@ -1,7 +1,10 @@
 .header {
   text-align: center;
   display: flex;
-  height: 140px;
+  height: 100px;
+  flex-direction: row;
+  background-color: lightgray;
+  padding-top: 15px;
 }
 .logo {
   padding-top: 13px;
@@ -34,8 +37,10 @@ a, p{
 
 .navlinks {
   flex-direction: row;
-  height: 50px;
-  width: 85px;
+  height: 75px;
+  width: 120px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 a {
   height: 50px;

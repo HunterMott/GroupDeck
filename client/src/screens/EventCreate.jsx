@@ -35,6 +35,7 @@ const EventCreate = (props) => {
           variant="outlined"
           value={title}
           onChange={handleChange}
+          required
         />
         <TextField
           name="description"
@@ -43,6 +44,7 @@ const EventCreate = (props) => {
           variant="outlined"
           value={description}
           onChange={handleChange}
+          required
         />
         <TextField
           name="date"
@@ -59,6 +61,7 @@ const EventCreate = (props) => {
           variant="outlined"
           value={img_url}
           onChange={handleChange}
+          required
         />
         <select
           defaultValue="default"
@@ -66,6 +69,7 @@ const EventCreate = (props) => {
           name="interest_id"
           value={interest_id}
           className='formbutton'
+          required
         >
           <option disabled value="default">
             -- Select a Category --
