@@ -1,6 +1,5 @@
-## Overview
 Work in progress! (https://groupdeck.netlify.app/)
-<br>
+## Overview
 **GroupDeck** is a web application built to help people find other people with similar interests! Once you make an account you can create your own event for people to see and come check out or check out others events to see if you would be interested in going to their event!
 <br>
 
