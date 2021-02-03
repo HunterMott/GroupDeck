@@ -98,22 +98,18 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Project Prep    |    H     |     4 hrs      |     2 hrs     |    3 hrs    |
-| Backend Skeleton |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Project Prep    |    H     |     4 hrs      |     3 hrs     |    3 hrs    |
+| Backend Skeleton |    H     |     3 hrs      |     3 hrs     |     TBD     |
 | Backend finish   |    H     |     6 hrs      |     3 hrs     |     TBD     |
-| Start Client   |    H     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Build basic components |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |    H     |     6 hrs      |     3 hrs     |     TBD     |
-| Add Contact Form    |    H     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |    H     |     6 hrs      |     3 hrs     |     TBD     |
-| Add Contact Form    |    H     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |    H     |     6 hrs      |     3 hrs     |     TBD     |
-| Add Contact Form    |    H     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |    H     |     6 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Start Client   |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Build basic components |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| Set up routing   |    H     |     6 hrs      |     3 hrs     |     TBD     |
+| Material UI    |    H     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Add new event |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| Edit event               |    H     |     6 hrs      |     4 hrs     |     TBD     |
+| Delete event    |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Basic styles |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| TOTAL               |          |     43 hrs      |     33 hrs     |     TBD     |
 
 <br>
 
