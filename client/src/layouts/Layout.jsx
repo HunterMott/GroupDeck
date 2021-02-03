@@ -9,7 +9,7 @@ export default function Layout(props) {
     <div>
       <header className="header">
         <Link to="/">
-          <img className='logo' src={Logo} />
+          <img className='logo' src={Logo} alt='GroupDeck'/>
         </Link>
         {currentUser ? (
           <div className='loggedinusername'>

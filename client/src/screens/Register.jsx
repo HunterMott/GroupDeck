@@ -53,7 +53,7 @@ const Register = (props) => {
           value={password}
           onChange={handleChange}
         />
-        <Button className='fombutton'
+        <Button className='formbutton'
           variant="contained"
           type='submit'
         >Login</Button>

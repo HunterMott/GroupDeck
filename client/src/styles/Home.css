@@ -25,3 +25,17 @@
   width: 200px;
   padding-bottom: 10px;
 }
+
+/* these @medias work but don't need.... I will need next week once i fix my nav bar and make some cool additions to the project! :) */
+
+/* @media only screen and (min-width: 600px) {
+  .homepage {
+    background-color: black;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .homepage{
+    background-color: pink;
+  }
+} */
